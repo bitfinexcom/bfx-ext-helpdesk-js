@@ -1,13 +1,24 @@
 {
-  "name": "bfx-ext-js",
-  "version": "0.0.5",
-  "private": true,
-  "description": "Bitfinex External Service",
+  "name": "bfx-ext-helpdesk-js",
+  "version": "0.0.1",
+  "private": false,
+  "description": "Bitfinex External Helpdesk Service",
   "author": {
-    "name": "prdn",
-    "email": "paolo@bitfinex.com"
+    "name": "Davide Scola",
+    "email": "davide@bitfinex.com"
   },
   "keywords": [
+    "javascript",
+    "nodejs",
+    "api",
+    "js",
+    "node",
+    "microservices",
+    "microservice",
+    "async",
+    "backend-services",
+    "backend",
+    "grenache",
     "bitfinex"
   ],
   "dependencies": {
@@ -25,15 +36,15 @@
   "engine": {
     "node": ">=8.0"
   },
-  "license": "MIT",
+  "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bitfinexcom/bfx-ext-js.git"
+    "url": "git+https://github.com/bitfinexcom/bfx-ext-helpdesk-js.git"
   },
   "maintainers": [
     {
-      "name": "prdn",
-      "email": "paolo@bitfinex.com"
+      "name": "Davide Scola",
+      "email": "davide@bitfinex.com"
     }
   ],
   "devDependencies": {
