@@ -22,16 +22,8 @@
     "bitfinex"
   ],
   "dependencies": {
-    "async": "^3.2.1",
-    "bfx-facs-api": "github:bitfinexcom/bfx-facs-api",
-    "bfx-facs-base": "git+https://github.com/bitfinexcom/bfx-facs-base.git",
-    "bfx-facs-grc": "github:bitfinexcom/bfx-facs-grc",
-    "bfx-facs-interval": "https://github.com/bitfinexcom/bfx-facs-interval.git",
-    "bfx-svc-boot-js": "https://github.com/bitfinexcom/bfx-svc-boot-js.git",
-    "bfx-wrk-api": "github:bitfinexcom/bfx-wrk-api",
-    "bfx-wrk-base": "git+https://github.com/bitfinexcom/bfx-wrk-base.git",
-    "lodash": "^4.17.21",
-    "yargs": "^17.2.1"
+    "bfx-svc-boot-js": "git+https://github.com/bitfinexcom/bfx-svc-boot-js.git#6ae412ee",
+    "bfx-wrk-api": "git+https://github.com/bitfinexcom/bfx-wrk-api.git#b81d4dd3"
   },
   "engine": {
     "node": ">=8.0"
@@ -48,9 +40,11 @@
     }
   ],
   "devDependencies": {
-    "husky": "^8.0.3",
+    "grenache-nodejs-http": "git+https://github.com/bitfinexcom/grenache-nodejs-http.git#31820b71",
+    "grenache-nodejs-link": "git+https://github.com/bitfinexcom/grenache-nodejs-link.git#d4d889a1",
+    "husky": "~8.0.3",
     "mocha": "^10.2.0",
-    "standard": "^17.0.0"
+    "standard": "~17.1.0"
   },
   "scripts": {
     "prepare": "husky install",
