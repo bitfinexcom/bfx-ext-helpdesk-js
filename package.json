@@ -43,7 +43,6 @@
     "grenache-nodejs-http": "git+https://github.com/bitfinexcom/grenache-nodejs-http.git#31820b71",
     "grenache-nodejs-link": "git+https://github.com/bitfinexcom/grenache-nodejs-link.git#d4d889a1",
     "husky": "~8.0.3",
-    "mocha": "^10.2.0",
     "standard": "~17.1.0"
   },
   "scripts": {
