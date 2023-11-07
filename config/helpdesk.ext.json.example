@@ -1,5 +1,20 @@
 {
   "grcServices": [
-    "rest:ext:helpdesk"
-  ]
+    "rest:ext:helpdesk:foo",
+    "rest:ext:helpdesk:bar"
+  ],
+  "helpdesk": {
+    "foo": {
+      "revision": "v1",
+      "publicKey": "...",
+      "privateKey": "...",
+      "baseUrl": "https://foo.example.com"
+    },
+    "bar": {
+      "revision": "v2",
+      "publicKey": "...",
+      "privateKey": "...",
+      "baseUrl": "https://bar.example.com"
+    }
+  }
 }
