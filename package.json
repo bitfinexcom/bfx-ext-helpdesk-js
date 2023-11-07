@@ -22,8 +22,10 @@
     "bitfinex"
   ],
   "dependencies": {
+    "@hapi/bourne": "~3.0.0",
     "bfx-svc-boot-js": "git+https://github.com/bitfinexcom/bfx-svc-boot-js.git#6ae412ee",
-    "bfx-wrk-api": "git+https://github.com/bitfinexcom/bfx-wrk-api.git#b81d4dd3"
+    "bfx-wrk-api": "git+https://github.com/bitfinexcom/bfx-wrk-api.git#b81d4dd3",
+    "got": "~11.8.6"
   },
   "engines": {
     "node": ">=14.18.0"
