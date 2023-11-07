@@ -48,9 +48,18 @@
     "husky": "~8.0.3",
     "standard": "~17.1.0"
   },
+  "config": {
+    "port": "7777",
+    "env": "development"
+  },
   "scripts": {
     "prepare": "husky install",
     "lint": "standard",
-    "lint:fix": "standard --fix"
+    "lint:fix": "standard --fix",
+    "worker": "exec node worker.js --env=\"${npm_config_env:-${npm_package_config_env}}\" --wtype='wrk-ext-helpdesk-api' --apiPort \"${npm_config_port:-${npm_package_config_port}}\"",
+    "worker:pause": "exec $npm_execpath run -- worker:kill --signal 'SIGTSTP'",
+    "worker:resume": "exec $npm_execpath run -- worker:kill --signal 'SIGCONT'",
+    "worker:stop": "exec $npm_execpath run -- worker:kill --signal 'SIGINT'",
+    "worker:kill": "exec pkill --full '^wrk-ext-helpdesk-api-[0-9]+\\s*$'"
   }
 }
