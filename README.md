@@ -257,6 +257,7 @@ Get agents list ordered by username in ascending order. All of the following arg
       - `on_vacation <bool_t>` whether or not agent is on vacation
       - `department_id <int_t>` department identifier associated with the agent as a *positive* integer
       - `name <string_t>` a *single-line*, *case-insensitve* string that has to be contained in the agent name (no more than *64 characters*)
+      - `email <string_t>` a *single-line*, *case-insensitve* string that has to be contained in the agent email (no more than *255 characters*)
 
 **Response:**
 
