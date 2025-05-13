@@ -246,6 +246,7 @@ module.exports = {
           .set('on_vacation', 'bool_t|optional')
           .set('department_id', 'int_t|optional|positive')
           .set('name', 'string_t|optional|singleLine|max:0x40')
+          .set('email', 'string_t|optional|singleLine|max:0xFF')
           .get()
         )
         .get(),
