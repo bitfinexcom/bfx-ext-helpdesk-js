@@ -65,6 +65,8 @@ const v = new Validator({
  *   Tags list validator.
  * @property {Object} List.Agents
  *   Agents list validator.
+ * @property {Object} List.Agreements
+ *   SLAs list validator.
  * @property {Object} List.Teams
  *   Teams list validator.
  *
@@ -85,6 +87,9 @@ module.exports = {
       },
       Agents: {
         check: v.compile(Schema.List.Agents)
+      },
+      Agreements: {
+        check: v.compile(Schema.List.Agreements)
       },
       Teams: {
         check: v.compile(Schema.List.Teams)
