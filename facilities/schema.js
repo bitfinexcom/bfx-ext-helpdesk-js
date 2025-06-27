@@ -162,6 +162,8 @@ const listProperties = new Schema()
  *   Schema of tags list.
  * @property {Object} List.Agents
  *   Schema of agents list.
+ * @property {Object} List.Agreements
+ *   Schema of SLAs list.
  * @property {Object} List.Teams
  *   Schema of teams list.
  *
@@ -247,6 +249,14 @@ module.exports = {
           .set('department_id', 'int_t|optional|positive')
           .set('name', 'string_t|optional|singleLine|max:0x40')
           .set('email', 'string_t|optional|singleLine|max:0xFF')
+          .get()
+        )
+        .get(),
+
+      Agreements: new Schema(listParamsSchema)
+        .set('properties', new Schema(listProperties)
+          .set('is_active', 'bool_t|optional')
+          .set('name', 'string_t|optional|singleLine|max:0x40')
           .get()
         )
         .get(),
