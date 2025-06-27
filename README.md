@@ -26,6 +26,7 @@
   - [action: 'getTopics'](#action-gettopics)
   - [action: 'getTags'](#action-gettags)
   - [action: 'getAgents'](#action-getagents)
+  - [action: 'getAgreements'](#action-getagreements)
   - [action: 'getTeams'](#action-getteams)
 - [Examples](#examples)
 - [Maintainers](#maintainers)
@@ -274,6 +275,37 @@ Get agents list ordered by username in ascending order. All of the following arg
     "username": "foobar",
     "email": "foobar@example.com",
     "id": 31337
+  }
+]
+```
+
+### action: 'getAgreements'
+
+Get SLAs list ordered by name in ascending order. All of the following arguments and properties are to be considered optional.
+
+  - `args <Array>`
+    - `0 <Object>`
+      - `limit <int_t>` maximum number of results as a *positive* integer
+      - `offset <int_t>` offset of the first result as a *non-negative* integer
+      - `sort <sort_t>` sort direction
+      - `is_active <bool_t>` whether or not SLA plan is active
+      - `name <string_t>` a *single-line*, *case-insensitve* string that has to be contained in the SLA name (no more than *64 characters*)
+
+**Response:**
+
+  - `<Array>` The SLAs list. Each list item will have the following properties:
+    - `name <string_t>` SLA mnemonic name
+    - `id <int_t>` SLA identifier as a *positive* integer
+    - `grace_period <int_t>` amount as a *positive* integer, in hours, before tickets with this SLA will become *overdue* if not closed in allotted time
+
+**Example Response:**
+
+```js
+[
+  {
+    "name": "foobar",
+    "id": 31337,
+    "grace_period": 48
   }
 ]
 ```
