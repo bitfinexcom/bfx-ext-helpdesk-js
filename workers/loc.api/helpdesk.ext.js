@@ -135,6 +135,29 @@ class ExtHelpdesk extends Api {
   }
 
   /**
+   * Action: get SLAs list ordered by name in ascending order.
+   *
+   * @param {Object} space
+   *   The request namespace.
+   * @param {Object} params
+   *   The request parameters.
+   * @param {SchedulerCallback} cb
+   *   The scheduler callback.
+   *
+   * @return {void}
+   *   Nothing is returned.
+   */
+  getAgreements (space, params, cb) {
+    this._getList(
+      space,
+      Validator.List.Agreements,
+      RESTful.Endpoint.Agreements,
+      params,
+      cb
+    )
+  }
+
+  /**
    * Action: get teams list ordered by name in ascending order.
    *
    * @param {Object} space
