@@ -1,7 +1,7 @@
 /*
  * This file is part of bfx-ext-helpdesk-js.
  *
- * Copyright (C) 2023 - 2025 Davide Scola <davide@bitfinex.com>
+ * Copyright (C) 2023 - 2026 Davide Scola <davide@bitfinex.com>
  *
  * Licensed under the Apache License,  Version 2.0 (the "License"); you may
  * not use this file except in  compliance with the License. You may obtain
